@@ -1,0 +1,85 @@
+{
+  "name": "shipressure",
+  "version": "1.0.0",
+  "description": "Universal AI Context Compression CLI — compress documents, repos, and docs into AI-ready context",
+  "keywords": [
+    "context",
+    "compression",
+    "ai",
+    "claude",
+    "codex",
+    "token",
+    "prompt",
+    "cli",
+    "document",
+    "compress",
+    "llm"
+  ],
+  "license": "MIT",
+  "author": "Shivam Prajapati",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamprajapati17/shipressure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivamprajapati17/shipressure/issues"
+  },
+  "homepage": "https://github.com/shivamprajapati17/shipressure#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./cli": {
+      "types": "./dist/cli/index.d.ts",
+      "import": "./dist/cli/index.js",
+      "default": "./dist/cli/index.js"
+    }
+  },
+  "bin": {
+    "shipressure": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist/cli",
+    "dist/parsers",
+    "dist/scrapers",
+    "dist/resolvers",
+    "dist/builders",
+    "dist/compressors",
+    "dist/normalizers",
+    "dist/types",
+    "dist/index.js",
+    "dist/index.d.ts",
+    "skill.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli/index.js",
+    "dev": "tsx src/cli/index.ts",
+    "test": "node dist/tests/run.js"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.8.0",
+    "xlsx": "^0.18.5",
+    "csv-parse": "^5.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+
+  "publishConfig": {
+    "access": "public"
+  }
+}
