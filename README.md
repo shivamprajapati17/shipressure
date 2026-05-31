@@ -1,12 +1,12 @@
 # Shipressure ⚡
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/shipressure"><img src="https://img.shields.io/npm/v/shipressure?style=flat-square&logo=npm&color=cb3837" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/shipressure"><img src="https://img.shields.io/npm/dm/shipressure?style=flat-square&logo=npm&color=cb3837" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/shipressure-cli"><img src="https://img.shields.io/npm/v/shipressure-cli?style=flat-square&logo=npm&color=cb3837" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/shipressure-cli"><img src="https://img.shields.io/npm/dm/shipressure-cli?style=flat-square&logo=npm&color=cb3837" alt="npm downloads"></a>
   <a href="https://github.com/shivamprajapati17/shipressure"><img src="https://img.shields.io/github/stars/shivamprajapati17/shipressure?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://github.com/shivamprajapati17/shipressure/actions"><img src="https://img.shields.io/github/actions/workflow/status/shivamprajapati17/shipressure/publish.yml?branch=master&style=flat-square&logo=githubactions&label=CI" alt="CI status"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/npm/l/shipressure?style=flat-square" alt="license"></a>
-  <a href="https://github.com/shivamprajapati17/shipressure/blob/master/package.json"><img src="https://img.shields.io/node/v/shipressure?style=flat-square&logo=nodedotjs" alt="node version"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/npm/l/shipressure-cli?style=flat-square" alt="license"></a>
+  <a href="https://github.com/shivamprajapati17/shipressure/blob/master/package.json"><img src="https://img.shields.io/node/v/shipressure-cli?style=flat-square&logo=nodedotjs" alt="node version"></a>
 </p>
 
 **Universal AI Context Compression**
@@ -26,13 +26,13 @@ Instead of manually uploading files into Claude, Codex, Gemini, or OpenCode — 
 ## Installation
 
 ```bash
-npm install -g shipressure
+npm install -g shipressure-cli
 ```
 
 Or run directly:
 
 ```bash
-npx shipressure@latest install
+npx shipressure-cli@latest install
 ```
 
 ## Usage
@@ -157,7 +157,7 @@ use shipressure ./api.pdf
 ## API Usage
 
 ```typescript
-import { shipressure } from 'shipressure';
+import { shipressure } from 'shipressure-cli';
 
 const result = await shipressure('./api.pdf', { mode: 'balanced' });
 console.log(result.content);

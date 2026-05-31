@@ -1,6 +1,6 @@
 {
-  "name": "shipressure",
-  "version": "1.0.1",
+  "name": "shipressure-cli",
+  "version": "1.0.0",
   "description": "Universal AI Context Compression CLI — compress documents, repos, and docs into AI-ready context",
   "keywords": [
     "context",
